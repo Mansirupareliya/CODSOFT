@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <style type="text/css">
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } 
+  body{
+    width: 100%;
+    height: 100vh;
+    background-image:url("company2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  nav{
+    width:100%;
+    height:70px;
+    padding: 0px 70px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+  }
+  
+  .menu a{
+    text-decoration: none;
+    font-family:sans-serif;
+    color :black;
+    font-size:15px ;
+    padding: 10px 20px;
+    position: relative;
+    border-bottom: 2px solid indianred;
+    align-items: center;
+
+  }
+  .menu a::before{
+    content:'';
+    position:fixied;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height:100% ;
+    text-decoration: underline;
+  
+    border-bottom: 2px solid indianred;
+   
+  }
+  .menu a:hover::before{
+    width:90%;
+  }
+  #search {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid indianred;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    margin: 10px;
+}
+
+.button:hover {
+    background-color:indianred; /* Green color on hover */
+    color: white;
+}
+
+.login-button {
+    background-color: indianred; /* Blue color for login button */
+    color: white;
+}
+
+.signup-button {
+    background-color:indianred; /* Red color for signup button */
+    color: white;
+}
+  .h-txt{
+      max-width: 650px;
+      position: absolute;
+      top: 180px;
+      left: 40%;
+      font-size: 120%;
+      transform: translate(-50%,-50);
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+      
+  }
+  
+  .h-txt span{
+    letter-spacing: 4px;
+  }
+  .h-txt h1{
+    font-size: 3.5em;
+    font-family:  sans-serif;
+  }
+  .h-txt a{
+    text-decoration: none;
+    background: indianred;
+    color:white;
+    padding: 9px;
+    letter-spacing:1px ;
+    border-radius: 8px;
+  }
+  .h-txt p{
+    font-family: sans-serif;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+  width: 200px; 
+  height: 200px; 
+  border: 200px  200px solid #000; 
+  overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: visible;
+}
+
+.logo-container img {
+    width: 100px; 
+    height: auto;
+}
+
+  .footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width:100%;
+   background-color: white;
+   color:black;
+   text-align:center;
+   
+  }
+
+    </style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- <a class = "logo" href="techlogo1.jpg.png">LOGO</a> -->
+     
+      
+      <div class="logo-container">
+        <img src="techlogo1.jpg.png" alt="Logo">
+    </div>
+       
+
+      <div class ="menu">
+        <ul>
+        <li><a href = "home.html">Home</a>
+        <a href = "about.html">About</a>
+        <a href = "best requirement">Best requirement</a>
+        <a href = "service.html">Service</a>
+        <a href = "contact.html">Contact us</a>
+      </ul> 
+      </div>
+      <div class="search-container">
+        <input type="text"id = "search" placeholder="Search...">
+    </div>
+
+      <div class = "container">
+        <a href = "login _page.html" class = "button login-button">Login</a>
+        <a href = "#" class = "button signup-button">Sign Up</a>
+      </div>
+    </nav>
+    <section  class = "h-txt">
+      <span>ENJOY your day with Technology WORLD!!!</span>
+      <h4>Welcome from Technology WORLD</h4>
+      <br>
+      <p>We're changing the WORLD</p>
+      <h4>WITH TECHNOLOGY.</h4>
+      <br>
+      <a href = "#" > Select your Technology</a>
+    </section>
+  </header>
+
+  <div class = "footer">
+    <p>&copy; 2023 Technology WORLD</p>
+    <p>designed by Mansi Rupareliya</p>
+</div>
+ 
+ 
+</body>
+</html>
